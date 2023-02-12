@@ -1,0 +1,310 @@
+Using pre-set license
+Built from '2022.1/staging' branch; Version is '2022.1.19f1 (2fd7b40534d1) revision 3135412'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'tr' Physical Memory: 16163 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.1.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Program Files/Unity/unity/AnUnknownGame/AnUnknownGame
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+65092
+Successfully changed project path to: C:/Program Files/Unity/unity/AnUnknownGame/AnUnknownGame
+C:/Program Files/Unity/unity/AnUnknownGame/AnUnknownGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 70.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.19f1 (2fd7b40534d1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/unity/AnUnknownGame/AnUnknownGame/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3976 MB
+    Driver:   31.0.15.2802
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56556
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003727 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 74.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.629 seconds
+Domain Reload Profiling:
+	ReloadAssembly (629ms)
+		BeginReloadAssembly (65ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (468ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (111ms)
+				TypeCache.Initialize (110ms)
+					TypeCache.ScanAssembly (108ms)
+				ResolveRequiredComponents (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (281ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (53ms)
+				SetLoadedEditorAssemblies (8ms)
+				RefreshPlugins (75ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (103ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003811 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Program Files\Unity\unity\AnUnknownGame\AnUnknownGame\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Program Files\Unity\unity\AnUnknownGame\AnUnknownGame\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.165 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1166ms)
+		BeginReloadAssembly (209ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (124ms)
+		EndReloadAssembly (856ms)
+			LoadAssemblies (79ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (278ms)
+				TypeCache.Initialize (273ms)
+					TypeCache.ScanAssembly (268ms)
+				ResolveRequiredComponents (5ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (392ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (9ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (250ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3399 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (58.3 KB). Loaded Objects now: 3861.
+Memory consumption went from 0.51 GB to 0.51 GB.
+Total: 2.890700 ms (FindLiveObjects: 0.255300 ms CreateObjectMapping: 0.124100 ms MarkObjects: 2.426100 ms  DeleteObjects: 0.084000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 889172.611944 seconds.
+  path: Assets/Town Creator Kit LITE/Textures/Town Houses UV Alt.png
+  artifactKey: Guid(029dda14687513b4f8d81ab04c04ad21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/Textures/Town Houses UV Alt.png using Guid(029dda14687513b4f8d81ab04c04ad21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60c4f47d5f608b9047b8b617e6b72eb0') in 0.086448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Town Creator Kit LITE/Textures/Lanterns UV Alt.png
+  artifactKey: Guid(0d51ed06967ea4041ab3ce03094c2041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/Textures/Lanterns UV Alt.png using Guid(0d51ed06967ea4041ab3ce03094c2041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd02f504f172b7f46ef123881cf483ff4') in 0.019087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Town Creator Kit LITE/Prefabs
+  artifactKey: Guid(f1bc4a887dcfd8c4eafc97b6b72a807c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/Prefabs using Guid(f1bc4a887dcfd8c4eafc97b6b72a807c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '254360ae690c82fce83e9913bd48bd36') in 0.005040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Town Creator Kit LITE/Textures/Town Houses UV Alt 2 Occlusion.png
+  artifactKey: Guid(e14036484886fcf40b3cde5af273fd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/Textures/Town Houses UV Alt 2 Occlusion.png using Guid(e14036484886fcf40b3cde5af273fd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '401815a5c53b5f0037211b4754016096') in 0.018108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Town Creator Kit LITE/Textures/Buildings_Map_1A Occlusion.png
+  artifactKey: Guid(e68c86e19c2cc7e49936cdf0a0227327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/Textures/Buildings_Map_1A Occlusion.png using Guid(e68c86e19c2cc7e49936cdf0a0227327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd94591658939823336bd7fc37b975bc7') in 0.025238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Town Creator Kit LITE/Textures/Wood Mix 1 Alt.png
+  artifactKey: Guid(3a6ff793d0cc2154c801ff75b3c4f6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/Textures/Wood Mix 1 Alt.png using Guid(3a6ff793d0cc2154c801ff75b3c4f6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06153088d94570b930ee5874278552e5') in 0.017845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.473064 seconds.
+  path: Assets/Town Creator Kit LITE/FBX/Cellar 1.fbx
+  artifactKey: Guid(f5398195e324e9b45804f7e17251d700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/FBX/Cellar 1.fbx using Guid(f5398195e324e9b45804f7e17251d700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e920d310229640ee19f4203183d1e76') in 0.490796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Town Creator Kit LITE/FBX/Roofing_Models_1B(Gr).fbx
+  artifactKey: Guid(c1b87f513d753104f82c4352c7f6431f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/FBX/Roofing_Models_1B(Gr).fbx using Guid(c1b87f513d753104f82c4352c7f6431f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd035eb4dea186c0dcc3aca3fa1c38e') in 0.373359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Town Creator Kit LITE/FBX/House_Walls_1A2(Gr).fbx
+  artifactKey: Guid(b16845a6a7e6b784cbf7f76cba790e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/FBX/House_Walls_1A2(Gr).fbx using Guid(b16845a6a7e6b784cbf7f76cba790e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b3d8e76547ff5569f28dc0f686caaf6') in 0.157664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Town Creator Kit LITE/FBX/Town House 1.fbx
+  artifactKey: Guid(e3e7869774731504f99d7df44892ab0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/FBX/Town House 1.fbx using Guid(e3e7869774731504f99d7df44892ab0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '521d81fdae60f579197d0ca05c084da8') in 0.180237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.977650 seconds.
+  path: Assets/Town Creator Kit LITE/FBX/Materials/Lanterns UV.mat
+  artifactKey: Guid(abd77f4bddee72b42bd53c94c159403b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/FBX/Materials/Lanterns UV.mat using Guid(abd77f4bddee72b42bd53c94c159403b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae605d4e8dfbedee716134e3f5e2112e') in 0.075098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Town Creator Kit LITE/FBX/Materials/Storage UV.mat
+  artifactKey: Guid(8578da820dcc3674dbc0be1e1347092e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/FBX/Materials/Storage UV.mat using Guid(8578da820dcc3674dbc0be1e1347092e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2984bbc5fe5a62d9d5d8db2cddb18bb') in 0.033488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Town Creator Kit LITE/FBX/Materials/Town Houses UV.mat
+  artifactKey: Guid(9034bf370b7196643a62739e1eb9b7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/FBX/Materials/Town Houses UV.mat using Guid(9034bf370b7196643a62739e1eb9b7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be526b9a8b59663d6f527f4db2aba32') in 0.033625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Town Creator Kit LITE/FBX/Materials/Wood Mix 1 UV.mat
+  artifactKey: Guid(c573082b65c601c4b94b5483e5cc3b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/FBX/Materials/Wood Mix 1 UV.mat using Guid(c573082b65c601c4b94b5483e5cc3b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6458eef6dd9b122afe38f1fc732884c') in 0.021417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Town Creator Kit LITE/FBX/Materials/Town Houses UV 3.mat
+  artifactKey: Guid(33d83d6d91e12994b9a3caad12e5b3b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/FBX/Materials/Town Houses UV 3.mat using Guid(33d83d6d91e12994b9a3caad12e5b3b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdc9ee328f58c1c608d1b1dcc068c122') in 0.022120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.950295 seconds.
+  path: Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/House 3 and Roof.prefab
+  artifactKey: Guid(0d6c5697d33c56e46b4508555460f763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/House 3 and Roof.prefab using Guid(0d6c5697d33c56e46b4508555460f763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20ec4bb9abe5504ed76094172c948aae') in 0.035254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/Wall_2.prefab
+  artifactKey: Guid(7f12a750c80adea44b4ca1421dc1e431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/Wall_2.prefab using Guid(7f12a750c80adea44b4ca1421dc1e431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf9962f586ab9e33294fc24a5b7d69c') in 0.037492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/Wall_Floor Alt.prefab
+  artifactKey: Guid(dac710fcf50026f44832f51c3ada717d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/Wall_Floor Alt.prefab using Guid(dac710fcf50026f44832f51c3ada717d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c1003e0609229bfd09c603caff9eb41') in 0.043668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/Wall_Floor.prefab
+  artifactKey: Guid(33cbede02ef57ba48b6d8778515473ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/Wall_Floor.prefab using Guid(33cbede02ef57ba48b6d8778515473ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25287cd5054f7751d510389cafcd2da0') in 0.038124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/Lantern.prefab
+  artifactKey: Guid(65455e9cadb20c240b31aaa375be7780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/Lantern.prefab using Guid(65455e9cadb20c240b31aaa375be7780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfe875766b15eb052417422aa6f7124d') in 0.028756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/Wall_1 Alt.prefab
+  artifactKey: Guid(23fab24b3283fb1439f1c7b0f54bbf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/Wall_1 Alt.prefab using Guid(23fab24b3283fb1439f1c7b0f54bbf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a611d8607fa12cd2237f824424db4c1d') in 0.042548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/Wall_Window Alt.prefab
+  artifactKey: Guid(fd1ca411c661ae84ca60a0f765dbbd1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/Wall_Window Alt.prefab using Guid(fd1ca411c661ae84ca60a0f765dbbd1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cc86fed753977b5c5441f7517349ad4') in 0.039514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/Town House 1 Alt.prefab
+  artifactKey: Guid(f0b2ac67c9a97fd498b5c8d0195f8d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Creator Kit LITE/Prefabs/Town Kit LITE/Town House 1 Alt.prefab using Guid(f0b2ac67c9a97fd498b5c8d0195f8d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a13d487bdda912c8bba04329c4e6b1e') in 0.030364 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
