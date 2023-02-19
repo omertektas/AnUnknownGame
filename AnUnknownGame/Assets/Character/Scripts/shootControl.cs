@@ -6,6 +6,7 @@ public class shootControl : MonoBehaviour
 {
     public Camera cam;
     public LayerMask enemy;
+
     void Start()
     {
         
