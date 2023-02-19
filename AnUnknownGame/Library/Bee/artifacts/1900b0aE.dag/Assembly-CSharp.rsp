@@ -360,6 +360,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Character/Scripts/cameraController.cs"
 "Assets/Character/Scripts/characterController.cs"
+"Assets/Character/Scripts/shootControl.cs"
+"Assets/Enemy/Scripts/enemyScript.cs"
 "Assets/PROMETEO - Car Controller/Scripts/CameraFollow.cs"
 "Assets/PROMETEO - Car Controller/Scripts/PrometeoCarController.cs"
 "Assets/PROMETEO - Car Controller/Scripts/PrometeoTouchInput.cs"

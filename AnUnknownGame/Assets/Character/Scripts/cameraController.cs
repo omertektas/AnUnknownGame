@@ -11,7 +11,7 @@ public class cameraController : MonoBehaviour
     float mouseX,mouseY;    
     void Start()
     {
-        
+        Cursor.lockState = CursorLockMode.Locked;
     }
     void Update()
     {
@@ -23,6 +23,7 @@ public class cameraController : MonoBehaviour
         mouseX += Input.GetAxis("Mouse X") * mouseSensivitiy;
         mouseY += Input.GetAxis("Mouse Y") * mouseSensivitiy;
         this.transform.eulerAngles = new Vector3(-mouseY,mouseX,0);
+        target.transform.eulerAngles= new Vector3(0, mouseX, 0);
 
     }
 }
