@@ -60,10 +60,10 @@
     <Compile Include="Assets\PROMETEO - Car Controller\Scripts\PrometeoTouchInput.cs" />
     <Compile Include="Assets\Character\Scripts\characterController.cs" />
     <Compile Include="Assets\Character\Scripts\cameraController.cs" />
+    <Compile Include="Assets\Nokobot\Modern Guns - Handgun\_Demo Assets\SimpleShoot.cs" />
     <Compile Include="Assets\Enemy\Scripts\enemyScript.cs" />
     <Compile Include="Assets\Character\Scripts\shootControl.cs" />
     <Compile Include="Assets\PROMETEO - Car Controller\Scripts\PrometeoCarController.cs" />
-    <Compile Include="Assets\Nokobot\Modern Guns - Handgun\_Demo Assets\SimpleShoot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Nokobot\Modern Guns - Handgun\README.txt" />

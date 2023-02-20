@@ -6,19 +6,29 @@ public class shootControl : MonoBehaviour
 {
     public Camera cam;
     public LayerMask enemy;
+    public GameObject aim;
 
     void Start()
     {
-        
+        aim.SetActive(false);
     }
 
     
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (characterController.Instance.shootControl == true)
         {
+            aim.SetActive(true);
+            if (Input.GetMouseButtonDown(0))
+            {
             shoot();
+            }
         }
+        else if (characterController.Instance.shootControl == false)
+        {
+            aim.SetActive(false);
+        }
+        
         
     }
 

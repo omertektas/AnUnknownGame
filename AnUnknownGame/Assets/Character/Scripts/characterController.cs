@@ -5,17 +5,39 @@ using UnityEngine;
 
 public class characterController : MonoBehaviour
 {
+    public static characterController Instance;
     [SerializeField] private float characterSpeed;
     Animator anim;
+    public bool shootControl=false;
 
     void Start()
     {
+        Instance = this;
         anim=this.GetComponent<Animator>();
     }
 
     void Update()
     {
+
         move();
+
+        if (Input.GetKeyDown("x"))
+        {
+            if (shootControl==false)
+            {
+                anim.SetBool("shoot", true);
+                shootControl=true;
+
+            }
+            else
+            {
+                anim.SetBool("shoot", false);
+                shootControl=false;
+                
+
+            }
+        }
+        
     }
 
     void move()
