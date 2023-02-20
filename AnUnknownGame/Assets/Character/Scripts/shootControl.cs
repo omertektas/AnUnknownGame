@@ -7,27 +7,40 @@ public class shootControl : MonoBehaviour
     public Camera cam;
     public LayerMask enemy;
     public GameObject aim;
+    Animator anim;
+    private bool shootCntrl = false;
 
     void Start()
     {
         aim.SetActive(false);
+        anim = GetComponent<Animator>();
     }
 
     
     void Update()
     {
-        if (characterController.Instance.shootControl == true)
+        if (Input.GetMouseButtonDown(1) )
         {
-            aim.SetActive(true);
-            if (Input.GetMouseButtonDown(0))
+            if (shootCntrl==false)
             {
-            shoot();
+                aim.SetActive(true);
+                shootCntrl = true;
             }
+            else if (shootCntrl==true)
+            {
+                aim.SetActive(false);
+                shootCntrl = false; 
+
+            }
+
         }
-        else if (characterController.Instance.shootControl == false)
-        {
-            aim.SetActive(false);
-        }
+        if (Input.GetMouseButtonDown(0) && aim.activeInHierarchy)
+            {
+               
+                anim.SetBool("shoot", true);
+                shoot();
+            }
+        
         
         
     }

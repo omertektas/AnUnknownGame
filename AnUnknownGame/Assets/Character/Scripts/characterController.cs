@@ -8,12 +8,12 @@ public class characterController : MonoBehaviour
     public static characterController Instance;
     [SerializeField] private float characterSpeed;
     Animator anim;
-    public bool shootControl=false;
+    
 
     void Start()
     {
         Instance = this;
-        anim=this.GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -21,22 +21,7 @@ public class characterController : MonoBehaviour
 
         move();
 
-        if (Input.GetKeyDown("x"))
-        {
-            if (shootControl==false)
-            {
-                anim.SetBool("shoot", true);
-                shootControl=true;
-
-            }
-            else
-            {
-                anim.SetBool("shoot", false);
-                shootControl=false;
-                
-
-            }
-        }
+       
         
     }
 
