@@ -8,12 +8,15 @@ public class shootControl : MonoBehaviour
     public LayerMask enemy;
     public GameObject aim;
     Animator anim;
+    public AudioSource pat; 
+    
     private bool shootCntrl = false;
 
     void Start()
     {
         aim.SetActive(false);
         anim = GetComponent<Animator>();
+        
     }
 
     
@@ -23,11 +26,14 @@ public class shootControl : MonoBehaviour
         {
             if (shootCntrl==false)
             {
+                anim.SetBool("aim", true);
                 aim.SetActive(true);
                 shootCntrl = true;
             }
             else if (shootCntrl==true)
             {
+                anim.SetBool("aim", false);
+
                 aim.SetActive(false);
                 shootCntrl = false; 
 
@@ -36,13 +42,28 @@ public class shootControl : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0) && aim.activeInHierarchy)
             {
-               
+                pat.Play(); 
                 anim.SetBool("shoot", true);
                 shoot();
+              
             }
+        if (Input.GetMouseButtonUp(0))
+        {
+            StartCoroutine(shootTime());
+            anim.SetBool("shoot", false);
+
+        }
+
+
+
+    }
+
+    private IEnumerator shootTime()
+    {
+        yield return new WaitForSeconds(1f);
+        pat.Stop();
         
-        
-        
+
     }
 
     public void shoot()
