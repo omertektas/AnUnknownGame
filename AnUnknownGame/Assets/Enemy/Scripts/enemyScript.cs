@@ -25,6 +25,10 @@ public class enemyScript : MonoBehaviour
         this.transform.LookAt(targetCharacter.transform.position);  
         if (health<=0)
         {
+            enemyNavMesh.isStopped = true;
+
+            anim.SetBool("walk", false);
+            anim.SetBool("attack", false);
             anim.SetBool("dead",true);
             StartCoroutine(deadFunc()); 
         }
