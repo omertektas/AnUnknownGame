@@ -33,4 +33,12 @@ public class characterController : MonoBehaviour
         anim.SetFloat("Vertical",ver);
         this.gameObject.transform.Translate(hor * characterSpeed*Time.deltaTime, 0, ver * characterSpeed*Time.deltaTime);
     }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag=="damage")
+        {
+            Debug.Log("Hasar");
+        }
+    }
 }

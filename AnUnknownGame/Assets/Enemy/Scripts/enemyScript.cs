@@ -22,6 +22,7 @@ public class enemyScript : MonoBehaviour
     
     void Update()
     {
+        this.transform.LookAt(targetCharacter.transform.position);  
         if (health<=0)
         {
             anim.SetBool("dead",true);
@@ -34,16 +35,23 @@ public class enemyScript : MonoBehaviour
             {
                 enemyNavMesh.isStopped=false;   
                 enemyNavMesh.SetDestination(targetCharacter.transform.position);
-
-            }
-            if (targetDistance<= targetAttackDistance)
-            {
-                enemyNavMesh.isStopped=true;
+                anim.SetBool("walk", true);
+                anim.SetBool("attack", false);
             }
             else
             {
-                //idle
+                enemyNavMesh.isStopped = true;
+
+                anim.SetBool("walk", false);
+                anim.SetBool("attack", false);
             }
+            if (targetDistance<= targetAttackDistance)
+            {
+                anim.SetBool("walk", false);
+                anim.SetBool("attack", true);
+                enemyNavMesh.isStopped=true;
+            }
+            
         }
 
     }
