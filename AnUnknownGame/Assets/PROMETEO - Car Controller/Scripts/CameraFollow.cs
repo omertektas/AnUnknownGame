@@ -27,8 +27,8 @@ public class CameraFollow : MonoBehaviour {
 		transform.rotation = Quaternion.Lerp(transform.rotation, _rot, lookSpeed * Time.deltaTime);
 
 		//Move to car
-		Vector3 _targetPos = absoluteInitCameraPosition + carTransform.transform.position;
-		transform.position = Vector3.Lerp(transform.position, _targetPos, followSpeed * Time.deltaTime);
+		//Vector3 _targetPos = absoluteInitCameraPosition + carTransform.transform.position;
+		//transform.position = Vector3.Lerp(transform.position, _targetPos, followSpeed * Time.deltaTime);
 
 	}
 
