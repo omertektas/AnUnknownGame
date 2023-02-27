@@ -161,6 +161,7 @@ public class PrometeoCarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
       //In this part, we set the 'carRigidbody' value with the Rigidbody attached to this
       //gameObject. Also, we define the center of mass of the car with the Vector3 given
       //in the inspector.
@@ -326,42 +327,54 @@ public class PrometeoCarController : MonoBehaviour
         }
 
       }else{
+            
+                if (Input.GetKey(KeyCode.W))
+                {
+                    CancelInvoke("DecelerateCar");
+                    deceleratingCar = false;
+                    GoForward();
+                }
+                if (Input.GetKey(KeyCode.S))
+                {
+                    CancelInvoke("DecelerateCar");
+                    deceleratingCar = false;
+                    GoReverse();
+                }
 
-        if(Input.GetKey(KeyCode.W)){
-          CancelInvoke("DecelerateCar");
-          deceleratingCar = false;
-          GoForward();
-        }
-        if(Input.GetKey(KeyCode.S)){
-          CancelInvoke("DecelerateCar");
-          deceleratingCar = false;
-          GoReverse();
-        }
+                if (Input.GetKey(KeyCode.A))
+                {
+                    TurnLeft();
+                }
+                if (Input.GetKey(KeyCode.D))
+                {
+                    TurnRight();
+                }
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    CancelInvoke("DecelerateCar");
+                    deceleratingCar = false;
+                    Handbrake();
+                }
+                if (Input.GetKeyUp(KeyCode.Space))
+                {
+                    RecoverTraction();
+                }
+                if ((!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W)))
+                {
+                    ThrottleOff();
+                }
+                if ((!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W)) && !Input.GetKey(KeyCode.Space) && !deceleratingCar)
+                {
+                    InvokeRepeating("DecelerateCar", 0f, 0.1f);
+                    deceleratingCar = true;
+                }
+                if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D) && steeringAxis != 0f)
+                {
+                    ResetSteeringAngle();
+                }
+            
 
-        if(Input.GetKey(KeyCode.A)){
-          TurnLeft();
-        }
-        if(Input.GetKey(KeyCode.D)){
-          TurnRight();
-        }
-        if(Input.GetKey(KeyCode.Space)){
-          CancelInvoke("DecelerateCar");
-          deceleratingCar = false;
-          Handbrake();
-        }
-        if(Input.GetKeyUp(KeyCode.Space)){
-          RecoverTraction();
-        }
-        if((!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W))){
-          ThrottleOff();
-        }
-        if((!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W)) && !Input.GetKey(KeyCode.Space) && !deceleratingCar){
-          InvokeRepeating("DecelerateCar", 0f, 0.1f);
-          deceleratingCar = true;
-        }
-        if(!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D) && steeringAxis != 0f){
-          ResetSteeringAngle();
-        }
+        
 
       }
 

@@ -1,14 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class characterController : MonoBehaviour
 {
     public static characterController Instance;
     [SerializeField] private float characterSpeed;
+    [SerializeField] private GameObject car;
+    [SerializeField] private GameObject carCamera; 
+    [SerializeField] private GameObject fText;
     Animator anim;
-    
+    public static bool carActive=false;
 
     void Start()
     {
@@ -20,7 +25,7 @@ public class characterController : MonoBehaviour
     {
 
         move();
-
+        getInThecar();
        
         
     }
@@ -39,6 +44,25 @@ public class characterController : MonoBehaviour
         if (collision.gameObject.tag=="damage")
         {
             Debug.Log("Hasar");
+        }
+    }
+
+    private void getInThecar()
+    {      
+        if (Vector3.Distance(this.transform.position, car.transform.position)<=4)
+        {
+            fText.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                carCamera.SetActive(true);               
+                Debug.Log("Arabaya binildi");
+                carActive = true;
+            }
+        }
+        else
+        {
+            fText.SetActive(false);
+            carActive = false;
         }
     }
 }
