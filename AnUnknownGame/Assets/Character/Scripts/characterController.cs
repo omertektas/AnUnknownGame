@@ -12,18 +12,21 @@ public class characterController : MonoBehaviour
     [SerializeField] private GameObject car;
     [SerializeField] private GameObject carCamera; 
     [SerializeField] private GameObject fText;
+    [SerializeField] private Behaviour carScript;
     Animator anim;
     public static bool carActive=false;
+    
 
     void Start()
     {
+        
         Instance = this;
         anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-
+        
         move();
         getInThecar();
        
@@ -54,13 +57,17 @@ public class characterController : MonoBehaviour
             fText.SetActive(true);
             if (Input.GetKeyDown(KeyCode.F))
             {
+                carScript.enabled = true;
                 carCamera.SetActive(true);               
                 Debug.Log("Arabaya binildi");
-                carActive = true;
+                carActive = true;              
+                this.gameObject.SetActive(false);
             }
         }
         else
         {
+            carScript.enabled = false;
+
             fText.SetActive(false);
             carActive = false;
         }
