@@ -4399,6 +4399,16 @@ MonoBehaviour:
   carCamera: {fileID: 667987570}
   fText: {fileID: 1454022807}
   carScript: {fileID: 42321283}
+  TokyoMesh:
+  - {fileID: 3922029995848286363}
+  - {fileID: 8613536009492834247}
+  - {fileID: 5976768901871450074}
+  - {fileID: 8943681075386824007}
+  - {fileID: 6562327643013945229}
+  - {fileID: 2910262187406149543}
+  - {fileID: 1082271958122358480}
+  - {fileID: 243729182}
+  - {fileID: 1556615184}
 --- !u!33 &810061383
 MeshFilter:
   m_ObjectHideFlags: 0

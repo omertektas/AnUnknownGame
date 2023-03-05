@@ -14,7 +14,7 @@ public class characterController : MonoBehaviour
     [SerializeField] private GameObject fText;
     [SerializeField] private Behaviour carScript;
     Animator anim;
-    public static bool carActive=false;
+    [SerializeField] private GameObject[] TokyoMesh;
     
 
     void Start()
@@ -60,16 +60,25 @@ public class characterController : MonoBehaviour
                 carScript.enabled = true;
                 carCamera.SetActive(true);               
                 Debug.Log("Arabaya binildi");
-                carActive = true;              
-                this.gameObject.SetActive(false);
+                
+
+                 this.gameObject.SetActive(false);
             }
+            /* else if (Input.GetKeyDown(KeyCode.T))
+             {
+                 carScript.enabled = false;
+                 carCamera.SetActive(false);
+                 Debug.Log("Arabaya binildi");
+
+                 this.gameObject.SetActive(true);
+             }*/
         }
         else
         {
             carScript.enabled = false;
 
             fText.SetActive(false);
-            carActive = false;
+           
         }
     }
 }

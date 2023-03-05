@@ -331,10 +331,7 @@ public class PrometeoCarController : MonoBehaviour
         }
 
       }else{
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-               
-            }
+            
 
                 if (Input.GetKey(KeyCode.W))
                 {
