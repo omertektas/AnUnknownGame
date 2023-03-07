@@ -59,19 +59,12 @@ public class characterController : MonoBehaviour
             {
                 carScript.enabled = true;
                 carCamera.SetActive(true);               
-                Debug.Log("Arabaya binildi");
+                
                 
 
                  this.gameObject.SetActive(false);
             }
-            /* else if (Input.GetKeyDown(KeyCode.T))
-             {
-                 carScript.enabled = false;
-                 carCamera.SetActive(false);
-                 Debug.Log("Arabaya binildi");
-
-                 this.gameObject.SetActive(true);
-             }*/
+            
         }
         else
         {

@@ -16,6 +16,9 @@ using UnityEngine.UI;
 
 public class PrometeoCarController : MonoBehaviour
 {
+    public GameObject tokyo;
+    public GameObject carCamera;
+    public int deneme;
     //CAR SETUP
 
     [Space(20)]
@@ -165,6 +168,7 @@ public class PrometeoCarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        tokyo = GameObject.Find("Tokyo");
         
       //In this part, we set the 'carRigidbody' value with the Rigidbody attached to this
       //gameObject. Also, we define the center of mass of the car with the Vector3 given
@@ -270,7 +274,14 @@ public class PrometeoCarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            carCamera = GameObject.Find("/car/Camera");
+            
+            tokyo.SetActive(true);
+            carCamera.SetActive(false);
+            this.enabled = false;
+        }
       //CAR DATA
 
       // We determine the speed of the car.
