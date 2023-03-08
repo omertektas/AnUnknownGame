@@ -168,6 +168,7 @@ public class PrometeoCarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        carEngineSound.volume = 1.0f;
         tokyo = GameObject.Find("Tokyo");
         
       //In this part, we set the 'carRigidbody' value with the Rigidbody attached to this
